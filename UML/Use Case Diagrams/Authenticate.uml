@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_BizMMN2_Eea5C8aB3U0KLg" name="Stage 2">
+  <packagedElement xmi:type="uml:Package" xmi:id="_yuTUwN3MEeaGYq-sFt06Pg" name="Authentication">
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_LGPRUN2_Eea5C8aB3U0KLg" name="Log in">
+      <ownedUseCase xmi:type="uml:UseCase" xmi:id="_32Ef0N3MEeaGYq-sFt06Pg" name="Log in"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_42c-wN3MEeaGYq-sFt06Pg" name="Log out"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Actor" xmi:id="__G96kN3MEeaGYq-sFt06Pg" name="Authentication server"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_ErtVgN3NEeaGYq-sFt06Pg" memberEnd="_ErvKsN3NEeaGYq-sFt06Pg _ErvxwN3NEeaGYq-sFt06Pg">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_ErujoN3NEeaGYq-sFt06Pg" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Erujod3NEeaGYq-sFt06Pg" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_ErvKsN3NEeaGYq-sFt06Pg" name="authentication server" type="__G96kN3MEeaGYq-sFt06Pg" association="_ErtVgN3NEeaGYq-sFt06Pg"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_ErvxwN3NEeaGYq-sFt06Pg" name="log in" type="_LGPRUN2_Eea5C8aB3U0KLg" association="_ErtVgN3NEeaGYq-sFt06Pg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_FgiEsN3NEeaGYq-sFt06Pg" memberEnd="_FgirwN3NEeaGYq-sFt06Pg _Fgirwd3NEeaGYq-sFt06Pg">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_FgiEsd3NEeaGYq-sFt06Pg" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_FgiEst3NEeaGYq-sFt06Pg" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_FgirwN3NEeaGYq-sFt06Pg" name="authentication server" type="__G96kN3MEeaGYq-sFt06Pg" association="_FgiEsN3NEeaGYq-sFt06Pg"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_Fgirwd3NEeaGYq-sFt06Pg" name="log out" type="_42c-wN3MEeaGYq-sFt06Pg" association="_FgiEsN3NEeaGYq-sFt06Pg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_GqDRgN3NEeaGYq-sFt06Pg" name="User"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_IhTHAN3NEeaGYq-sFt06Pg" memberEnd="_IhTHA93NEeaGYq-sFt06Pg _IhTuEN3NEeaGYq-sFt06Pg" navigableOwnedEnd="_IhTHA93NEeaGYq-sFt06Pg">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_IhTHAd3NEeaGYq-sFt06Pg" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_IhTHAt3NEeaGYq-sFt06Pg" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_IhTHA93NEeaGYq-sFt06Pg" name="log in" type="_LGPRUN2_Eea5C8aB3U0KLg" association="_IhTHAN3NEeaGYq-sFt06Pg"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_IhTuEN3NEeaGYq-sFt06Pg" name="user" type="_GqDRgN3NEeaGYq-sFt06Pg" association="_IhTHAN3NEeaGYq-sFt06Pg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_MbAjgN3NEeaGYq-sFt06Pg" memberEnd="_MbAjg93NEeaGYq-sFt06Pg _MbAjhN3NEeaGYq-sFt06Pg" navigableOwnedEnd="_MbAjg93NEeaGYq-sFt06Pg">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_MbAjgd3NEeaGYq-sFt06Pg" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_MbAjgt3NEeaGYq-sFt06Pg" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_MbAjg93NEeaGYq-sFt06Pg" name="log out" type="_42c-wN3MEeaGYq-sFt06Pg" association="_MbAjgN3NEeaGYq-sFt06Pg"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_MbAjhN3NEeaGYq-sFt06Pg" name="user" type="_GqDRgN3NEeaGYq-sFt06Pg" association="_MbAjgN3NEeaGYq-sFt06Pg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_QE73kN3NEeaGYq-sFt06Pg" name="Employee">
+    <generalization xmi:type="uml:Generalization" xmi:id="_XGiSEN3NEeaGYq-sFt06Pg" general="_GqDRgN3NEeaGYq-sFt06Pg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_R1WsUN3NEeaGYq-sFt06Pg" name="Manager">
+    <generalization xmi:type="uml:Generalization" xmi:id="_WaQa4N3NEeaGYq-sFt06Pg" general="_GqDRgN3NEeaGYq-sFt06Pg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_SnOOIN3NEeaGYq-sFt06Pg" name="Director">
+    <generalization xmi:type="uml:Generalization" xmi:id="_VrzZcN3NEeaGYq-sFt06Pg" general="_GqDRgN3NEeaGYq-sFt06Pg"/>
+  </packagedElement>
+</uml:Model>

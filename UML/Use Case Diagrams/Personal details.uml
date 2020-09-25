@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_idHIwN3NEeaGYq-sFt06Pg" name="Personal details">
+  <packagedElement xmi:type="uml:Package" xmi:id="_pp9J8N3NEeaGYq-sFt06Pg" name="Personal details">
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_6Vt8oN3NEeaGYq-sFt06Pg" name="Read personal details">
+      <include xmi:type="uml:Include" xmi:id="_ItZM0N3OEeaGYq-sFt06Pg" addition="_BEMm0N3OEeaGYq-sFt06Pg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_9G0yUN3NEeaGYq-sFt06Pg" name="Amend personal details">
+      <include xmi:type="uml:Include" xmi:id="_KKA70N3OEeaGYq-sFt06Pg" addition="_BEMm0N3OEeaGYq-sFt06Pg"/>
+      <include xmi:type="uml:Include" xmi:id="_MgSPoN3OEeaGYq-sFt06Pg" addition="_6Vt8oN3NEeaGYq-sFt06Pg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="__U6agN3NEeaGYq-sFt06Pg" name="Create personal details">
+      <include xmi:type="uml:Include" xmi:id="_K9m78N3OEeaGYq-sFt06Pg" addition="_BEMm0N3OEeaGYq-sFt06Pg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_BEMm0N3OEeaGYq-sFt06Pg" name="Authorisation check"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_rnxhgN3NEeaGYq-sFt06Pg" name="Authorisation"/>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_s2bF8N3NEeaGYq-sFt06Pg" name="HR Database"/>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_vm_JEN3NEeaGYq-sFt06Pg" name="HR Employee">
+    <generalization xmi:type="uml:Generalization" xmi:id="_yTHYIN3NEeaGYq-sFt06Pg" general="_woPKsN3NEeaGYq-sFt06Pg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_woPKsN3NEeaGYq-sFt06Pg" name="User"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_FxMhcN3OEeaGYq-sFt06Pg" memberEnd="_FxNIgt3OEeaGYq-sFt06Pg _FxNIg93OEeaGYq-sFt06Pg">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_FxNIgN3OEeaGYq-sFt06Pg" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_FxNIgd3OEeaGYq-sFt06Pg" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_FxNIgt3OEeaGYq-sFt06Pg" name="authorisation" type="_rnxhgN3NEeaGYq-sFt06Pg" association="_FxMhcN3OEeaGYq-sFt06Pg"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_FxNIg93OEeaGYq-sFt06Pg" name="authorisation check" type="_BEMm0N3OEeaGYq-sFt06Pg" association="_FxMhcN3OEeaGYq-sFt06Pg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_GwQKsN3OEeaGYq-sFt06Pg" memberEnd="_GwQKs93OEeaGYq-sFt06Pg _GwQKtN3OEeaGYq-sFt06Pg">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_GwQKsd3OEeaGYq-sFt06Pg" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_GwQKst3OEeaGYq-sFt06Pg" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_GwQKs93OEeaGYq-sFt06Pg" name="hr database" type="_s2bF8N3NEeaGYq-sFt06Pg" association="_GwQKsN3OEeaGYq-sFt06Pg"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_GwQKtN3OEeaGYq-sFt06Pg" name="authorisation check" type="_BEMm0N3OEeaGYq-sFt06Pg" association="_GwQKsN3OEeaGYq-sFt06Pg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_OO_0MN3OEeaGYq-sFt06Pg" memberEnd="_OO_0M93OEeaGYq-sFt06Pg _OPAbQN3OEeaGYq-sFt06Pg" navigableOwnedEnd="_OO_0M93OEeaGYq-sFt06Pg">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_OO_0Md3OEeaGYq-sFt06Pg" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_OO_0Mt3OEeaGYq-sFt06Pg" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_OO_0M93OEeaGYq-sFt06Pg" name="create personal details" type="__U6agN3NEeaGYq-sFt06Pg" association="_OO_0MN3OEeaGYq-sFt06Pg"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_OPAbQN3OEeaGYq-sFt06Pg" name="hr employee" type="_vm_JEN3NEeaGYq-sFt06Pg" association="_OO_0MN3OEeaGYq-sFt06Pg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_RJ10sN3OEeaGYq-sFt06Pg" memberEnd="_RJ2bwd3OEeaGYq-sFt06Pg _RJ2bwt3OEeaGYq-sFt06Pg" navigableOwnedEnd="_RJ2bwd3OEeaGYq-sFt06Pg">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_RJ10sd3OEeaGYq-sFt06Pg" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_RJ2bwN3OEeaGYq-sFt06Pg" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_RJ2bwd3OEeaGYq-sFt06Pg" name="amend personal details" type="_9G0yUN3NEeaGYq-sFt06Pg" association="_RJ10sN3OEeaGYq-sFt06Pg"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_RJ2bwt3OEeaGYq-sFt06Pg" name="hr employee" type="_vm_JEN3NEeaGYq-sFt06Pg" association="_RJ10sN3OEeaGYq-sFt06Pg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_TORKkN3OEeaGYq-sFt06Pg" memberEnd="_TORKk93OEeaGYq-sFt06Pg _TORKlN3OEeaGYq-sFt06Pg" navigableOwnedEnd="_TORKk93OEeaGYq-sFt06Pg">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_TORKkd3OEeaGYq-sFt06Pg" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_TORKkt3OEeaGYq-sFt06Pg" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_TORKk93OEeaGYq-sFt06Pg" name="read personal details" type="_6Vt8oN3NEeaGYq-sFt06Pg" association="_TORKkN3OEeaGYq-sFt06Pg"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_TORKlN3OEeaGYq-sFt06Pg" name="hr employee" type="_vm_JEN3NEeaGYq-sFt06Pg" association="_TORKkN3OEeaGYq-sFt06Pg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_VLfFMN3OEeaGYq-sFt06Pg" memberEnd="_VLfFM93OEeaGYq-sFt06Pg _VLfFNN3OEeaGYq-sFt06Pg" navigableOwnedEnd="_VLfFM93OEeaGYq-sFt06Pg">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_VLfFMd3OEeaGYq-sFt06Pg" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_VLfFMt3OEeaGYq-sFt06Pg" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_VLfFM93OEeaGYq-sFt06Pg" name="read personal details" type="_6Vt8oN3NEeaGYq-sFt06Pg" association="_VLfFMN3OEeaGYq-sFt06Pg"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_VLfFNN3OEeaGYq-sFt06Pg" name="user" type="_woPKsN3NEeaGYq-sFt06Pg" association="_VLfFMN3OEeaGYq-sFt06Pg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_XoQCkN3OEeaGYq-sFt06Pg" memberEnd="_XoQCk93OEeaGYq-sFt06Pg _XoQClN3OEeaGYq-sFt06Pg" navigableOwnedEnd="_XoQCk93OEeaGYq-sFt06Pg">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_XoQCkd3OEeaGYq-sFt06Pg" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_XoQCkt3OEeaGYq-sFt06Pg" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_XoQCk93OEeaGYq-sFt06Pg" name="amend personal details" type="_9G0yUN3NEeaGYq-sFt06Pg" association="_XoQCkN3OEeaGYq-sFt06Pg"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_XoQClN3OEeaGYq-sFt06Pg" name="user" type="_woPKsN3NEeaGYq-sFt06Pg" association="_XoQCkN3OEeaGYq-sFt06Pg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_fbJ-MN3OEeaGYq-sFt06Pg" memberEnd="_fbKlQt3OEeaGYq-sFt06Pg _fbKlQ93OEeaGYq-sFt06Pg">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_fbKlQN3OEeaGYq-sFt06Pg" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_fbKlQd3OEeaGYq-sFt06Pg" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_fbKlQt3OEeaGYq-sFt06Pg" name="hr database" type="_s2bF8N3NEeaGYq-sFt06Pg" association="_fbJ-MN3OEeaGYq-sFt06Pg"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_fbKlQ93OEeaGYq-sFt06Pg" name="read personal details" type="_6Vt8oN3NEeaGYq-sFt06Pg" association="_fbJ-MN3OEeaGYq-sFt06Pg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_gMFr4N3OEeaGYq-sFt06Pg" memberEnd="_gMFr493OEeaGYq-sFt06Pg _gMFr5N3OEeaGYq-sFt06Pg">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_gMFr4d3OEeaGYq-sFt06Pg" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_gMFr4t3OEeaGYq-sFt06Pg" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_gMFr493OEeaGYq-sFt06Pg" name="hr database" type="_s2bF8N3NEeaGYq-sFt06Pg" association="_gMFr4N3OEeaGYq-sFt06Pg"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_gMFr5N3OEeaGYq-sFt06Pg" name="amend personal details" type="_9G0yUN3NEeaGYq-sFt06Pg" association="_gMFr4N3OEeaGYq-sFt06Pg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_g09CsN3OEeaGYq-sFt06Pg" memberEnd="_g09Cs93OEeaGYq-sFt06Pg _g09pwN3OEeaGYq-sFt06Pg">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_g09Csd3OEeaGYq-sFt06Pg" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_g09Cst3OEeaGYq-sFt06Pg" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_g09Cs93OEeaGYq-sFt06Pg" name="hr database" type="_s2bF8N3NEeaGYq-sFt06Pg" association="_g09CsN3OEeaGYq-sFt06Pg"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_g09pwN3OEeaGYq-sFt06Pg" name="create personal details" type="__U6agN3NEeaGYq-sFt06Pg" association="_g09CsN3OEeaGYq-sFt06Pg"/>
+  </packagedElement>
+</uml:Model>
